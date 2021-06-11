@@ -12,10 +12,9 @@ namespace ProgramaDeVacunacion
             {
                 do
                 {  
-                    Console.WriteLine("<--Modulo de informacion Kiosko Vacuna COVID-19 previa aplicacion-->");
-                    Console.WriteLine("Recuerda que podras aceptar o rechazar la aplicacion de la vacuna");
-                    Console.WriteLine("En Mexico la vacuna es un derecho de todos y todas, es publica, gratuita y garantizada");
                     Console.WriteLine("<---------BIENVENIDO AL SISTEMA NACIONAL DE VACUNACION----------->");
+                    Console.WriteLine("<------------------ESTADOS UNIDOS MEXICANOS-------------------->");
+                    Console.WriteLine("<--En Mexico la vacuna es un derecho, es publica, gratuita y garantizada-->");
                     Console.WriteLine("Selecciona una opción: 1)Vacuna 2)Efectos secundarios 3)Salir");
                     var option = Console.ReadLine();
                     vaccineSelection = int.Parse(option);
@@ -30,59 +29,57 @@ namespace ProgramaDeVacunacion
                             if (randomVaccine == 1)
                             {
                                 sideEffect.Information();
-                                Console.WriteLine("Acepto que soy mentalmente competente y acepto los terminos y condiciones.");
+                                Console.WriteLine("Acepto que soy mentalmente competente y aceptorecibir la vacuna COVID-19.");
                                 Console.WriteLine("Teclee la opcion adecuada: 1)Si 2)No");
                                 var confirmation = Console.ReadLine();
-                                if (confirmation == "1")
+                                if (confirmation == "1") //La confirmacion es numerica para evadir errores de escritura y ortografia 
                                 {
                                     Console.WriteLine( "Teclea el numero la opcion adecuada para ti: 1)Aplicar primer dosis.  2)Aplicar segunda dosis.");
-                                    var opciondosis = Console.ReadLine();
-                                    int dosesSelection = int.Parse(opciondosis);
+                                    var inoculationRound = Console.ReadLine();
+                                    int dosesSelection = int.Parse(inoculationRound);
                                     sideEffect.Inoculate(dosesSelection, randomVaccine);
                                 }
                                 else if (confirmation == "2")
                                 {
-                                    Console.WriteLine("No aceptar los terminos y condiciones implica la cancelacion de la inoculacion.");
+                                    Console.WriteLine("No aceptar recibir la vacuna COVID-19 implica la cancelacion de la inoculacion.");
                                 }
                             }
-                            //AztraZeneca
                             else if (randomVaccine == 2)
                             {
                                 sideEffect.Information();
-                                Console.WriteLine("Acepto que soy mentalmente competente y acepto los terminos y condiciones.");
+                                Console.WriteLine("Acepto que soy mentalmente competente y aceptorecibir la vacuna COVID-19.");
                                 Console.WriteLine("Teclee la opcion adecuada: 1)Si 2)No");
                                 var confirmation = Console.ReadLine();
                                 if (confirmation == "1")
                                 {
                                     Console.WriteLine( "Teclea el numero la opcion adecuada para ti: 1)Aplicar primer dosis.  2)Aplicar segunda dosis.");
-                                    var opciondosis = Console.ReadLine();
-                                    int dosesSelection = int.Parse(opciondosis);
+                                    var inoculationRound = Console.ReadLine();
+                                    int dosesSelection = int.Parse(inoculationRound);
                                     string vacunaAztra = randomVaccine.ToString();
                                     sideEffect.Inoculate(dosesSelection, vacunaAztra);
                                 }
                                 else if (confirmation == "2")
                                 {
-                                    Console.WriteLine("No aceptar los terminos y condiciones implica la cancelacion de la inoculacion.");
+                                    Console.WriteLine("No acepto recibir la vacuna y se que implica la cancelacion de la inoculacion.");
                                 }
                             }
-                            //Sputnik 
                             else if (randomVaccine == 3)
                             {
                                 sideEffect.Information();
-                                Console.WriteLine("Acepto que soy mentalmente competente y acepto los terminos y condiciones.");
+                                Console.WriteLine("Acepto que soy mentalmente competente y acepto recibir la vacuna COVID-19.");
                                 Console.WriteLine("Teclee la opcion adecuada: 1)Si 2)No");
                                 var confirmation = Console.ReadLine();
                                 if (confirmation == "1")
                                 {
                                     Console.WriteLine( "Teclea el numero la opcion adecuada para ti: 1)Aplicar primer dosis.  2)Aplicar segunda dosis.");
-                                    var opciondosis = Console.ReadLine();
-                                    int dosesSelection = int.Parse(opciondosis);
+                                    var inoculationRound = Console.ReadLine();
+                                    int dosesSelection = int.Parse(inoculationRound);
                                     string vacunaSputnik = randomVaccine.ToString();
                                     sideEffect.Inoculate(vacunaSputnik, dosesSelection);
                                 }
                                 else if (confirmation == "2")
                                 {
-                                    Console.WriteLine("No aceptar los terminos y condiciones implica la cancelacion de la inoculacion.");
+                                    Console.WriteLine("No acepto recibir la vacuna y se que implica la cancelacion de la inoculacion.");
                                 }
 
                             }

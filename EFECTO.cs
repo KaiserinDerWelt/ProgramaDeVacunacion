@@ -7,12 +7,12 @@ namespace ProgramaDeVacunacion
     class EFECTO : Vacuna
     {
         public static string sideEffectsDescription = "Posibles efectos secundarios:\n";
-        public static string sideEffectsPZR = "Zona de administración: hinchazón, dolor.\n2.- Escalofrío.\n3.- Fiebre(Más elevada después de la 2da dosis).";
+        public static string sideEffectsPZR = "Zona de administración: hinchazón, dolor.\n**Escalofrío.\n**Fiebre(Más elevada después de la 2da dosis).";
         public static string sideEffectsAZE = "**En zona de administración: Sensibilidad, dolor, calor, prurito, moratón.\n**Escalofríos, febrícula, malestar, fatiga, nauseas.\n3**Mialgia, artralgia.";
         public static string sideEffectsSPKV = "**Fiebre, cefalea y/o mialgias.\n**Dolor en zona de administración, hiperemia, hinchazón.\n**Síntomas gastrointestinales.";
-        public static string infoPZR = "Origen: Estados Unidos y Alemania\nEfectividad: 95%\nCosto: 19USD\nCaracterística: El mensaje se codifica en una molécula de ARN que se encapsula en una membrana lipídica para que pueda entrar en las células.";
-        public static string infoAZE = "Origen: Inglaterra y Suecia\nEfectividad: 70%\nCosto: 2.8USD\nCaracterística: El mensaje se codifica en un ADN, otro lenguaje genético, y se introduce en adenovirus del resfriado de los chimpancés.";
-        public static string infoSPKV = "Origen: Rusia\nEfectividad: 92%\nCosto: 10USD\nCaracterística: El gen del adenovirus, se sustrae y en su lugar se inserta un gen con el código de la proteína de otro virus.";
+        public static string infoPZR = "Origen: Estados Unidos y Alemania\nEfectividad: 95%\nCosto: 19USD\nCaracterística:\nEl mensaje se codifica en una molécula de ARN que se encapsula en una membrana \nlipídica para que pueda entrar en las células.";
+        public static string infoAZE = "Origen: Inglaterra y Suecia\nEfectividad: 70%\nCosto: 2.8USD\nCaracterística:\nEl mensaje se codifica en un ADN, otro lenguaje genético, y se introduce en adenovirus\n del resfriado de los chimpancés.";
+        public static string infoSPKV = "Origen: Rusia\nEfectividad: 92%\nCosto: 10USD\nCaracterística:\nEl gen del adenovirus, se sustrae y en su lugar se inserta un gen con el código de la proteína de otro virus.";
         public static string firstInoculation = "Seleccion: Primera dosis.";
         public static string secondInoculation = "Seleccion: Segunda dosis.";
         public static string inoculationMechanismPZR = "Con esta vacuna el ARN entra en las células humanas y hace que fabriquen proteínas de la espícula del coronavirus.\nLa espícula del virus es localizada por las células dendríticas: Se genera la respuesta inmune y se producen dos tipos de glóbulos blancos:\nlinfocitos B: Crean anticuerpos que bloquean el virus\nlinfocitos T: Destruye las células infectadas)";
@@ -24,7 +24,7 @@ namespace ProgramaDeVacunacion
         public static string periodND = "Aplicacion de segunda dosis dentro de 90 días.";
         public static string followingAppointment = "Fecha de aplicación de la segunda dosis: \n";
 
-        public EFECTO(int vacunaSeleccionadaAleatoria) : base(vacunaSeleccionadaAleatoria) { }
+        public EFECTO(int randomVaccineAsignation) : base(randomVaccineAsignation) { }
 
         public override string efectosPfizer()
         {

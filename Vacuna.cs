@@ -33,12 +33,17 @@ namespace ProgramaDeVacunacion
                 Console.WriteLine("Vacuna: " + SPKV);
             }
         }
-        //Métodos abstractos
+        //Metodos efectos secuendarios a nivel abstracto
         public abstract string efectosPfizer();
         public abstract string efectosAztraZeneca();
         public abstract string efectosSputnikV();
-        //Interfaz para vacuna asignada
-        public int datoVacuna
+
+        //Finalizer
+        ~Vacuna()
+        {
+            vaccineOption = 0;
+        }
+        public int vaccineData
         {
             get
             {
@@ -49,11 +54,7 @@ namespace ProgramaDeVacunacion
                 vaccineOption = value;
             }
         }
-        //Destructor
-        ~Vacuna()
-        {
-            vaccineOption = 0;
-        }
+       
 
     }
 }
