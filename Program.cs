@@ -32,7 +32,7 @@ namespace ProgramaDeVacunacion
                                 Console.WriteLine("Acepto que soy mentalmente competente y aceptorecibir la vacuna COVID-19.");
                                 Console.WriteLine("Teclee la opcion adecuada: 1)Si 2)No");
                                 var confirmation = Console.ReadLine();
-                                if (confirmation == "1") //La confirmacion es numerica para evadir errores de escritura y ortografia 
+                                if (confirmation == "1") //La confirmacion  es numerica para evadir errores de escritura y ortografia 
                                 {
                                     Console.WriteLine( "Teclea el numero la opcion adecuada para ti: 1)Aplicar primer dosis.  2)Aplicar segunda dosis.");
                                     var inoculationRound = Console.ReadLine();
